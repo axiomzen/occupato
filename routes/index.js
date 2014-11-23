@@ -3,7 +3,7 @@ var router = express.Router();
 var monitor = require('../models/monitor');
 
 /* GET home page. */
-router.get('/', function(req, res) {
+router.get('/send/update', function(req, res) {
   monitor.updateStatus(req.query.id, req.query.open);
   res.send({});
 });
