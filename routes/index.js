@@ -4,7 +4,7 @@ var monitor = require('../models/monitor');
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  monitor.updateStatus(req.params.id, req.params.open);
+  monitor.updateStatus(req.query.id, req.query.open);
   res.send({});
 });
 

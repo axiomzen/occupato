@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 var debug = require('debug')('server');
 var app = require('../app');
+var monitor = require('../models/monitor');
 
 app.set('port', process.env.PORT || 3000);
 
@@ -10,7 +11,8 @@ var server = app.listen(app.get('port'), function() {
 
 var io = require('socket.io').listen(server);
 
+monitor.addIO(io);
 io.on('connection', function(socket){
   console.log('a user connected');
-  socket.emit('update', { msg: 'The world is round, there is no up or down.' });
+  socket.emit('status', { msg: 'Connected' });
 });
