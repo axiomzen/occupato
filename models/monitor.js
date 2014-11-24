@@ -47,6 +47,17 @@ module.exports = {
     }
   },
 
+  getStatusBoolean: function(id) {
+    switch (id) {
+      case "1":
+        return mens.getStatus();
+      case "2":
+        return womens.getStatus();
+      case "3":
+        return shower.getStatus();
+    }
+  },
+
   addIO: function(app_IO) {
     io = app_IO;
   }
