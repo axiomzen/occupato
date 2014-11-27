@@ -1,13 +1,15 @@
 extends layout
 
 block content
-  h1= title
   .statuses
-    h2= "Men's"
-    h3#mens= mens
+    div(class="col-sm-4 occupato-status occupato-mens occupato-#{ mens }")
+      .fa.fa-male.mens-logo
+      h3#mens= mens
 
-    h2= "Women's"
-    h3#womens= womens
+    div(class="col-sm-4 occupato-status occupato-womens occupato-#{ womens }")
+      .fa.fa-female.womens-logo
+      h3#womens= womens
 
-    h2= "Shower"
-    h3#shower= shower
+    div(class="col-sm-4 occupato-status occupato-shower occupato-#{ shower }")
+      .fa.fa-cloud-download.shower-logo
+      h3#shower= shower

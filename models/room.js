@@ -26,9 +26,9 @@ module.exports = function() {
     },
     getStatusString: function() {
       if (this.empty) {
-        return "Empty!";
+        return "empty";
       } else {
-        return "Occupied!";
+        return "occupied";
       }
     }
   }
