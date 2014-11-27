@@ -1,8 +1,44 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+
 
 a {
   color: #00B7FF;
 }
+
+
+@media screen and (max-width: 768px) {
+  .occupato-status {
+    height:33.33vh !important;
+    font-size: 13em !important;
+  }
+}
+
+.occupato-status {
+  height: 100vh;
+  font-size: 30em;
+  text-align: center;
+}
+
+
+.occupato-mens {
+  background-color: #5aaeea;
+}
+
+
+.occupato-womens {
+  background-color: #ea96a8;
+}
+
+
+.occupato-shower {
+  background-color: #98ea84;
+}
+
+
+.occupato-occupied {
+  color: #c02328;
+}
+
+
