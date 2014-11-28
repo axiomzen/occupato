@@ -1,15 +1,18 @@
 extends layout
 
 block content
-  .statuses
-    div(class="col-sm-4 occupato-status occupato-mens occupato-#{ mens }")
-      .fa.fa-male.mens-logo
-      h3#mens= mens
+  .statuses.fill
+    .container.fill
+      .row.fill
+        .col-sm-12.fill
+          div(class="col-sm-4 occupato-status occupato-mens occupato-#{ mens }")
+            .fa.fa-male.mens-logo.dimensions.vertical-align
 
-    div(class="col-sm-4 occupato-status occupato-womens occupato-#{ womens }")
-      .fa.fa-female.womens-logo
-      h3#womens= womens
 
-    div(class="col-sm-4 occupato-status occupato-shower occupato-#{ shower }")
-      .fa.fa-cloud-download.shower-logo
-      h3#shower= shower
+          div(class="col-sm-4 occupato-status occupato-womens occupato-#{ womens }")
+            .fa.fa-female.womens-logo.dimensions
+
+
+          div(class="col-sm-4 occupato-status occupato-shower occupato-#{ shower }")
+            .fa.fa-cloud-download.shower-logo.dimensions
+
