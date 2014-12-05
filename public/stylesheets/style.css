@@ -59,3 +59,19 @@ a {
   margin: 0;
   width: 100%;
 }
+
+body {
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #333;
+}
+
+.fs1 {
+  font-size: 32px;
+}
+
+.smallish-icons {
+    font-size: 0.7em;
+    color: #fff;
+}
