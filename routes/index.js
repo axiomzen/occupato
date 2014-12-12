@@ -9,7 +9,8 @@ router.get('/send/update', function(req, res) {
 
   var log = {
     bathId: req.query.id,
-    open: req.query.open
+    open: req.query.open,
+    createdAt: new Date()
   };
 
   mongo.db.bathLogs.insert(log, function(err) {
