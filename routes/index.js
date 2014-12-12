@@ -2,10 +2,22 @@ var express = require('express');
 var router = express.Router();
 var monitor = require('../models/monitor');
 
+var mongo  = require('../config/mongo');
+
 /* GET home page. */
 router.get('/send/update', function(req, res) {
-  monitor.updateStatus(req.query.id, req.query.open);
-  res.send({});
+
+  var log = {
+    bathId: req.query.id,
+    open: req.query.open
+  };
+
+  mongo.db.bathLogs.insert(log, function(err) {
+    //mongo.db.close();
+    monitor.updateStatus(log.bathId, log.open);
+    res.send({});
+  });
+
 });
 
 router.get('/ascii/getupdate', function(req, res) {
