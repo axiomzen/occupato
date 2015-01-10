@@ -26,22 +26,22 @@ a {
 
 
 .occupato-mens {
-  background-color: #C5D865;
+  background-color: #CDE8F8;
 }
 
 
 .occupato-womens {
-  background-color: #A2D88C;
+  background-color: #0097DB;
 }
 
 
 .occupato-shower {
-  background-color: #C5D865;
+  background-color: #CDE8F8;
 }
 
 
 .occupato-occupied {
-  background-color: #D9453B;
+  background-color: #F2EC94;
 }
 
 .fa {
@@ -66,9 +66,12 @@ body {
   line-height: 1.5;
   color: #333;
 }
+.mls {
+  margin-left: .25em;
+}
 
 .fs1 {
-  font-size: 32px;
+  font-size: 48px;
 }
 
 .smallish-icons {
