@@ -21,7 +21,7 @@ router.get('/ascii/getupdate', function(req, res) {
   }
   console.log(to_send);
   res.send(to_send);
-})
+});
 
 router.get('/status', function(req, res) {
   res.render('status', {
