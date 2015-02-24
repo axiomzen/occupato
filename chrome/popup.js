@@ -1,29 +1,23 @@
 $(document).ready(function() {
+
   $('.mens').click(function(ev) {
-    broadcastChange('mens');
+    broadcastChangeFavorite('mens');
   });
 
   $('.womens').click(function(ev) {
-    broadcastChange('womens');
+    broadcastChangeFavorite('womens');
   });
 
   $('.shower').click(function(ev) {
-    broadcastChange('shower');
+    broadcastChangeFavorite('shower');
   });
 
-  function broadcastChange(newFavoriteBathroom) {
+
+  function broadcastChangeFavorite(newFavoriteBathroom) {
     chrome.runtime.sendMessage({
       action: 'changeFavoriteBathroom',
       bathroom: newFavoriteBathroom
     });
   }
-
-
-  chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    if (request.action === 'statusChanged') {
-      console.log('RECEIVED NEW STATUS', request.bathroomStatus);
-      $('.status').removeClass('occupied');
-    }
-  });
 
 });
