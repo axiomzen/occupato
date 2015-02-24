@@ -1,0 +1,12 @@
+.status {
+  float: left;
+  width: 33.33%;
+  height: 100px;
+  text-align: center;
+  color: #fff;
+  background-color: #80cf5d;
+}
+
+.occupied {
+  background-color: #cf343a;
+}
