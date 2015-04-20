@@ -1,6 +1,8 @@
 occupato
 ========
 
+Chrome Extension: https://chrome.google.com/webstore/detail/occupato/odikgpindnfcicflhhmgbbpjaggmhcjf 
+
 Bathroom as a Service (BaaS)
 
 Our internal hackathon project to monitor whether our bathrooms are full.
