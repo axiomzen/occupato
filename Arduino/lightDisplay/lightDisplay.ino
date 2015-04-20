@@ -4,11 +4,8 @@
 HttpClient client;
 
 // EDIT: 'Server' address to match your domain
-String server = "<your server address here>"; // This could also be 192.168.1.18/~me if you are running a server on your computer on a local network.
+String server = "<your server address here>";
 
-// This is the data that will be passed into your POST and matches your mysql column
-
-// digital pin 2 has a pushbutton attached to it. Give it a name:
 int mensRed = 13;
 int mensGreen = 12;
 int womensRed = 11;
@@ -19,7 +16,6 @@ int showerGreen = 8;
 // the setup routine runs once when you press reset:
 void setup() {
   // initialize serial communication at 9600 bits per second:
-  // make the pushbutton's pin an input:
   pinMode(mensRed, OUTPUT);
   pinMode(mensGreen, OUTPUT);
   pinMode(womensRed, OUTPUT);
@@ -29,7 +25,7 @@ void setup() {
 
   Bridge.begin();
   Serial.begin(9600);
-  
+
 
 }
 
@@ -64,7 +60,7 @@ void loop() {
         digitalWrite(mensGreen, HIGH);
       } else {
         digitalWrite(mensGreen, LOW);
-        digitalWrite(mensRed, HIGH);        
+        digitalWrite(mensRed, HIGH);
       }
     }
     if (c == '2') {
@@ -74,7 +70,7 @@ void loop() {
         digitalWrite(womensGreen, HIGH);
       } else {
         digitalWrite(womensGreen, LOW);
-        digitalWrite(womensRed, HIGH);        
+        digitalWrite(womensRed, HIGH);
       }
     }
     if (c == '3') {
@@ -84,13 +80,13 @@ void loop() {
         digitalWrite(showerGreen, HIGH);
       } else {
         digitalWrite(showerGreen, LOW);
-        digitalWrite(showerRed, HIGH);        
+        digitalWrite(showerRed, HIGH);
       }
     }
   }
   Serial.flush();
 
   delay(2000);
-  
+
   // delay in between reads for stability
 }
