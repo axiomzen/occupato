@@ -3,6 +3,8 @@ occupato
 
 Chrome Extension: https://chrome.google.com/webstore/detail/occupato/odikgpindnfcicflhhmgbbpjaggmhcjf 
 
+[Bitbar](https://github.com/matryer/bitbar) extension: https://github.com/acroca/occupato_bitbar
+
 Bathroom as a Service (BaaS)
 
 Our internal hackathon project to monitor whether our bathrooms are full.
